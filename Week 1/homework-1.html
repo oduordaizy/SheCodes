@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            
+        }
+        .container{
+            margin: 0 auto;
+        }
+        p{
+            text-align: center;
+        }
+        h1{
+            color: #1864ab;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        .daysContainer{
+            
+            width: 50%;
+            margin: 0 auto;
+            /*display: flex;*/
+            justify-content: center;
+            align-items: center;
+        }
+        .days{
+            /*margin-bottom: 10px;*/
+            /*background-color: #1864ab;*/
+            padding: 10px;
+        }
+        .daysContainer :hover{
+            background-color: bisque;
+        }
+        h4{
+            text-align: center;
+        }
+
+        button{
+            background: #1864ab;
+            color: white;
+            border-radius: 15px;
+            padding: 10px;
+            border: none;
+            display: block;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>&#9925</p>
+        <h1>Currently 21<sup>o</sup> in Tokyo</h1>
+        <h2>13<sup>o</sup> / <span style="font-weight: bold;">23<sup>o</sup></span> </h2>
+
+
+        <div class="daysContainer">
+            <div class="days">
+                <h4><span style="color: #74c0fc">&#127783;</span>Tomorrow</h4>
+                <p>10<sup>o</sup> / 22 <sup>o</sup></p>
+            </div>
+            <div class="days">
+                <h4><span>&#9925;</span>Saturday</h4>
+                <p>15<sup>o</sup> / 17 <sup>o</sup></p>
+            </div>
+            <div class="days">
+                <h4><span style="color: yellow;">&#9728;</span>Sunday</h4>
+                <p>25<sup>o</sup> / 28 <sup>o</sup></p>
+            </div>
+        </div>
+       
+        <button>Change City</button>
+        <p>Coded by Daisy Achieng' Oduor</p>
+    </div>
+</body>
+</html>
