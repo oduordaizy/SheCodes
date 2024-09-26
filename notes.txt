@@ -5,3 +5,5 @@ document.querySelector(ul)
 document.querySelector(.advanced) selects elements with class called advanced.
 
 document.querySelectorAll(.advanced)  //selects all elements with class advanced
+
+contactButton.addEventListener("click", contactUs);
