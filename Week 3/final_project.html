@@ -11,17 +11,18 @@
             margin: none;
         }
         .mainContainer{
-            background: #ccccea;
+            background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
 
             text-align: center;
             width: 60%;
             margin: 20px auto;
             border-radius: 10px;
+            padding: 30px;
         }
         .h1Container{
             border: white solid 1px;
             border-radius: 5px;
-            margin: 50px 20px;
+            margin: 20px;
             padding: 5px 15px;
         }
         img{
@@ -41,14 +42,20 @@
             margin-bottom: 30px;
             background-color:  #28615b;
             color: white;
-            border-radius: 5px;
+            border-radius: 10px;
             font-size: 24px;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover{
+            background-color: #0b7285; 
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
     <div class="mainContainer">
-        <div>t</div>
+        <div></div>
         <div class="h1Container">
             <h1>I love Crotcheting</h1>
         </div>
@@ -62,10 +69,28 @@
         <p><strong>Crotchet designs</strong> are cherished for their intricate patterns and versatility. From delicate lace doilies to cozy blankets and fashionable garments, crochet offers endless possibilities. Basic stitches—chains, single crochets, and double crochets—combine to form complex motifs and textures.
 
             <br>Popular techniques include granny squares, made of colorful rounds stitched into squares for afghans, bags, and clothing, and the elegant shell stitch, used in shawls, scarves, and decorative items. Modern crochet incorporates styles like Tunisian crochet, which blends knitting and crochet for a woven texture, and <em>amigurumi</em>, the Japanese art of crocheting small, stuffed toys.
+            <br>
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Crochet" target="_blank">Read on Wikipedia</a>
                         
         </p>
 
         <button>ORDER A CROTCHET PRODUCT</button>
     </div>
+    <script>
+        function makeOrder(){
+            let name = prompt("What is your name?")
+           
+            if ((name == "") || (name = null)){
+                alert("Please enter your name")
+            }
+            else{
+                alert(`Thanks ${name} we will be in touch`)
+            }
+        }
+        let x = document.querySelector('button');
+        x.addEventListener('click', makeOrder)
+
+    </script>
 </body>
 </html>
