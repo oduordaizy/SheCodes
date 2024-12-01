@@ -80,6 +80,9 @@
             background-color: black;
             color: white;
         }
+        .darkTheme .container{
+            background-color: rgb(40, 39, 39);
+        }
     </style>
 </head>
 <body>
@@ -117,17 +120,14 @@
 
         function changeTheme(){
             let body = document.body;
-            let container = document.querySelector('.container');
-
+         
             if (body.classList.contains('darkTheme')){
                 body.classList.remove('darkTheme')
-                container.style.backgroundColor = 'white';
+               
             }
             else{
                 body.classList.add('darkTheme');
-
-                container.style.backgroundColor = '#393e46';
-        }
+            }
 
         }
         
