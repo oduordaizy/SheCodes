@@ -54,6 +54,32 @@
             color: black;
             background: white;
         }
+        .intro-pic{
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+        .intro-pic:hover{
+            filter: contrast(80%);
+            transform: scale(0.8);
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .grid{
+            margin: 15px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        .grid img{
+            width: 100%;
+            border-radius: 8px;
+        }
+        .darkTheme{
+            background-color: black;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -62,22 +88,50 @@
     <h1>Travelling</h1>
 
     <h2>My favorite hobby</h2>
+    <a href="#">
+       <img src="https://damoclesjournal.com/wp-content/uploads/2022/02/0x0.jpg" alt="Intro Image" class="intro-pic">
+    </a>
 
-    <img src="https://www.etiqa.blog/wp-content/uploads/2023/05/Blog-Feature-Image-58.png" alt="Image 1">
+    <div class="grid">
+    <img src="https://www.etiqa.blog/wp-content/uploads/2023/05/Blog-Feature-Image-58.png" 
+    alt="Image 1">
 
     <img src="https://thesun.my/binrepository/female-tourists-spread-their-arms-held-their-wings_3518152_20231003092457.jpg" alt="Image 2">
 
     <img src="https://www.reliancegeneral.co.in/siteassets/rgiclassets/images/blogs-images/things-to-carry-while-travelling-to-us-from-india2.webp" alt="Image 3">
 
     <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2018-06/03/full/1528032172-4904.jpg?im=FeatureCrop,size=(826,465)" alt="Image 4">
-
+    </div>
     <p>My favorite hobby is travelling. I like all kinds of travel: by car, by train, by plane, and travelling on foot. But I have never travel by the ship yet.
         I love to travel without a group and without a guide, despite the fact that I often find ourselves in a difficult situation in unfamiliar places. Usually, I travel with my husband or with my friends. Most of all I like to travel by car and spend a little time at different places. Although long journeys are tiring me sometimes, but that doesn't stop me. </p>
     
     <button>Travel with me</button>
+    <div class="darkTheme"></div>
     </div>
 
     <footer>Coded by <a target='_blank' href="#">Daisy Achieng Oduor</a></footer>
+
+    <script>
+        let theme = document.querySelector('.theme');
+        theme.addEventListener('click', changeTheme)
+
+        function changeTheme(){
+            let body = document.body;
+            let container = document.querySelector('.container');
+
+            if (body.classList.contains('darkTheme')){
+                body.classList.remove('darkTheme')
+                container.style.backgroundColor = 'white';
+            }
+            else{
+                body.classList.add('darkTheme');
+
+                container.style.backgroundColor = '#393e46';
+        }
+
+        }
+        
+    </script>
     
 </body>
 </html>
