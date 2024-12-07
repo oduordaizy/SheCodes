@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        form{
+            width: 30%;
+            margin: 5% auto;
+            
+        }
+        body{
+            background: #e3e3e3; 
+            
+        }
+        label{
+            display: inline-block;
+            margin-top: 1px;
+            font-weight: bold;
+        }
+        
+        h1{
+             
+            color: #233142;;
+            text-align: center;
+            
+        }
+        button{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #233142;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover{
+            background: #455d7a; 
+        }
+        input[type="password"],
+        input[type="email"]{
+            width: 100%;
+            padding: 5px;
+            margin-top: 1px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <h1>Welcome Back!!</h1>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email Address">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <br>
+        <button type="submit">Log In</button>
+    </form>
+    
+</body>
+</html>
